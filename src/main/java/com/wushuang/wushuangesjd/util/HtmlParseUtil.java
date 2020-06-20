@@ -19,8 +19,8 @@ public class HtmlParseUtil {
 
 
         String url = "https://search.jd.com/Search?keyword=java";
+        //解析网页(jsoup返回document就是document对象)
         Document document = Jsoup.parse(new URL(url), 30000);
-
 
 
         Element element = document.getElementById("J_goodsList");
